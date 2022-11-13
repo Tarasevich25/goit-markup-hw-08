@@ -1,0 +1,19 @@
+.team-member {
+  padding: 30px 0;
+  &__position {
+    color: $main-color;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  &__name {
+    color: $second-color;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
+}

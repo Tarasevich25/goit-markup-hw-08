@@ -1,0 +1,71 @@
+.form {
+  &__label {
+    display: block;
+    text-align: left;
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: $second-color;
+  }
+  &__field {
+    position: relative;
+    margin-bottom: 10px;
+    &--comment {
+      margin-bottom: 20px;
+    }
+  }
+  &__input {
+    width: 100%;
+    padding: 11px 12px 11px 42px;
+    font-size: 14px;
+    border: 1px solid $input-border;
+    border-radius: 4px;
+    outline: none;
+    transition-duration: 250ms;
+    transition-property: border-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus {
+      border-color: $hover-color;
+    }
+  }
+  &__icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: currentColor;
+    transition-duration: 250ms;
+    transition-property: fill;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__textarea {
+    display: block;
+    resize: none;
+    width: 100%;
+    height: 120px;
+    padding: 12px;
+    border-color: $input-border;
+    border-radius: 4px;
+
+    &::placeholder {
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 0.01em;
+      color: rgba(117, 117, 117, 0.5);
+    }
+  }
+  &__btn {
+    width: 200px;
+    height: 50px;
+    margin-top: 30px;
+    background-color: #188ce8;
+    color: $third-color;
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}

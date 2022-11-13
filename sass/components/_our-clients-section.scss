@@ -1,0 +1,43 @@
+.clients {
+  margin-bottom: 94px;
+  &__head {
+    color: $main-color;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-top: 94px;
+    margin-bottom: 50px;
+  }
+  &__logo {
+    display: flex;
+    gap: 30px;
+  }
+  &__item {
+    width: 170px;
+    height: 92px;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    color: #afb1b8;
+    border: 1px solid #afb1b8;
+    transition-duration: 250ms;
+    transition-property: color, border;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      border: 1px solid $hover-color;
+      color: $hover-color;
+    }
+  }
+  &__icon {
+    fill: currentColor;
+  }
+}

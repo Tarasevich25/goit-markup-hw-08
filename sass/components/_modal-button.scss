@@ -1,0 +1,27 @@
+.modal__button {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: $third-color;
+  padding: 0;
+  cursor: pointer;
+}
+.modal__icon {
+  width: 18px;
+  height: 18px;
+  transition-duration: 250ms;
+  transition-property: fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: $hover-color;
+  }
+}
