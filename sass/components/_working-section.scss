@@ -10,6 +10,9 @@
     border-radius: 4px;
     background-color: #f5f4fa;
     margin-bottom: 30px;
+    @media (max-width: 768px) {
+      width: 450px;
+    }
   }
   &__icon {
     display: block;

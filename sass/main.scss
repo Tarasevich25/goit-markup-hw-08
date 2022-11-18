@@ -1,7 +1,9 @@
 @import "./utils/vars";
 @import "./utils/base";
+@import "./utils/breakpoints";
 @import "./components/header";
 @import "./components/header-logo";
+@import "./components/header-burger-menu";
 @import "./components/header-nav";
 @import "./components/header-contacts";
 @import "./components/hero-section";

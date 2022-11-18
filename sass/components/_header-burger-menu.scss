@@ -1,0 +1,9 @@
+.header__burger-menu {
+  display: flex;
+  background-color: $third-color;
+  border: none;
+  padding: 0;
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}

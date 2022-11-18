@@ -1,5 +1,9 @@
 .header__nav {
+  display: none;
   margin-left: 93px;
+  @media (min-width: $tablet) {
+    display: flex;
+  }
   &--item {
     color: $main-color;
     position: relative;
