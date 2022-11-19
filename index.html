@@ -17,11 +17,11 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="header__container container">
         <a class="header__logo" href="./index.html"
           ><span class="web">Web</span>Studio</a
         >
-        <button class="header__burger-menu">
+        <button class="header__burger-menu js-open-menu">
           <svg class="header__burger-menu--icon" width="40" height="40">
             <use href="./images/icons.svg#burger-menu"></use>
           </svg>
@@ -142,9 +142,9 @@
         </div>
       </section>
       <section class="working sections">
-        <div class="container">
+        <div class="working__container container">
           <ul class="working list">
-            <li>
+            <li class="working__thumb">
               <div class="working__item">
                 <svg class="working__icon" width="70" height="70">
                   <use href="./images/icons.svg#antenna"></use>
@@ -156,7 +156,7 @@
                 формування позиції.
               </p>
             </li>
-            <li>
+            <li class="working__thumb">
               <div class="working__item">
                 <svg class="working__icon" width="70" height="70">
                   <use href="./images/icons.svg#clock"></use>
@@ -168,7 +168,7 @@
                 тягне у себе.
               </p>
             </li>
-            <li>
+            <li class="working__thumb">
               <div class="working__item">
                 <svg class="working__icon" width="70" height="70">
                   <use href="./images/icons.svg#diagram"></use>
@@ -179,7 +179,7 @@
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li>
+            <li class="working__thumb">
               <div class="working__item">
                 <svg class="working__icon" width="70" height="70">
                   <use href="./images/icons.svg#astronaut"></use>
@@ -565,14 +565,32 @@
         </div>
       </div>
     </footer>
-    <div class="mobile-menu">
+    <div class="mobile-menu js-menu-container">
       <div class="container">
-        <button class="mobile-menu__close-button"></button>
+        <button
+          data-modal-close
+          class="mobile-menu__close-button js-close-menu"
+          type="submit"
+        >
+          <svg class="modal__icon">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
         <nav class="mobile-menu__nav">
-          <ul>
-            <li><a href="./index.html"></a></li>
-            <li><a href="./portfolio.html"></a></li>
-            <li><a href=""></a></li>
+          <ul class="mobile-menu__nav--button list">
+            <li><a href="./index.html">Студія</a></li>
+            <li><a href="./portfolio.html">Портфоліо</a></li>
+            <li><a href="">Контакти</a></li>
+          </ul>
+          <ul class="list">
+            <li class="mobile-menu__number">
+              <a class="" href="tel:+380961111111">+380961111111</a>
+            </li>
+            <li class="mobile-menu__mail">
+              <a class="" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
           </ul>
         </nav>
       </div>

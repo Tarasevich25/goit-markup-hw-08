@@ -11,8 +11,12 @@
     margin-bottom: 50px;
   }
   &__card {
-    display: flex;
+    display: block;
     gap: 30px;
+    @media (min-width: $tablet) {
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
   &__image {
     background-color: $third-color;

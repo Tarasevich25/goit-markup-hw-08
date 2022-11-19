@@ -1,6 +1,9 @@
 .our-work {
+  display: none;
   padding-top: 0;
-
+  @media (min-width: $desktop) {
+    display: flex;
+  }
   &__head {
     color: $main-color;
     font-weight: 700;

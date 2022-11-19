@@ -12,11 +12,20 @@
   }
   &__logo {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
   }
   &__item {
-    width: 170px;
+    width: 210px;
     height: 92px;
+    justify-content: center;
+    align-items: center;
+    @media (min-width: $tablet) {
+      width: 226px;
+    }
+    @media (min-width: $desktop) {
+      width: 170px;
+    }
   }
   &__link {
     display: flex;

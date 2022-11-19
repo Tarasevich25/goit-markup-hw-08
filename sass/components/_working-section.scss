@@ -1,23 +1,36 @@
 .working {
-  display: flex;
-  gap: 30px;
+  display: block;
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  &__thumb {
+    width: 450px;
+
+    @media (min-width: $tablet) {
+      width: 354px;
+    }
+    @media (min-width: $desktop) {
+      width: 270px;
+    }
+  }
   &__item {
-    width: 270px;
-    height: 120px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 25px;
     border-radius: 4px;
     background-color: #f5f4fa;
     margin-bottom: 30px;
-    @media (max-width: 768px) {
-      width: 450px;
-    }
   }
   &__icon {
     display: block;
   }
   &__head {
+    display: flex;
+    justify-content: center;
     color: $main-color;
     font-weight: 700;
     font-size: 14px;
@@ -31,5 +44,6 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     margin: 0;
+    margin-bottom: 30px;
   }
 }

@@ -1,0 +1,48 @@
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: $third-color;
+  padding: 48px 40px;
+  &.is-open {
+    display: block;
+  }
+  &__close-button {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    background-color: $third-color;
+    padding: 0;
+    cursor: pointer;
+  }
+  &__nav--button {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.8;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: $main-color;
+  }
+  &__number {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+  }
+  &__mail {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+  }
+}
