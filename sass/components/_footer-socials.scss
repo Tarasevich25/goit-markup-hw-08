@@ -1,10 +1,13 @@
 .footer__socials {
   display: flex;
-  margin: 0;
-  padding: 0;
-  list-style: none;
   gap: 10px;
   justify-content: center;
+  @include mq(mobile-only) {
+    margin-bottom: 60px;
+  }
+  @include mq(desktop) {
+    margin-left: 70px;
+  }
 }
 .footer__socials--link {
   display: flex;

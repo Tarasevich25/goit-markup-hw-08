@@ -1,6 +1,7 @@
 .footer__feedback {
-  margin-left: auto;
-
+  @include mq(desktop) {
+    margin-left: auto;
+  }
   &--label {
     color: $third-color;
     font-weight: 700;
@@ -11,18 +12,27 @@
     margin-bottom: 20px;
   }
   &--field {
-    display: flex;
-    gap: 12px;
+    @include mq(desktop) {
+      display: flex;
+      gap: 12px;
+    }
   }
   &--input {
-    width: 358px;
+    max-width: 450px;
+    width: 100%;
     padding: 16px 15px;
     background-color: rgba(47, 48, 58, 1);
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    @include mq(not-desktop) {
+      margin-bottom: 20px;
+    }
+    @include mq(desktop) {
+      width: 358px;
+    }
   }
   &--btn {
-    display: flex;
+    display: inline-flex;
     background-color: $hover-color;
     font-weight: 700;
     font-size: 16px;

@@ -1,8 +1,8 @@
 .header__nav {
   display: none;
-  margin-left: 93px;
-  @media (min-width: $tablet) {
-    display: flex;
+  @include mq(tablet) {
+    display: block;
+    margin-left: 93px;
   }
   &--item {
     color: $main-color;

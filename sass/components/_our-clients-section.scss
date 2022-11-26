@@ -3,28 +3,31 @@
   &__head {
     color: $main-color;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-align: center;
-    margin-top: 94px;
-    margin-bottom: 50px;
+    margin-top: 60px;
+    @include mq(desktop) {
+      font-size: 36px;
+      line-height: 1.18;
+      margin-top: 94px;
+    }
   }
   &__logo {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+    @include card-set;
+    margin-top: 30px;
+    @include mq(desktop) {
+      margin-top: 50px;
+    }
   }
   &__item {
-    width: 210px;
-    height: 92px;
-    justify-content: center;
-    align-items: center;
-    @media (min-width: $tablet) {
-      width: 226px;
+    @include card-set-item(2);
+    @include mq(tablet) {
+      @include card-set-item(3);
     }
-    @media (min-width: $desktop) {
-      width: 170px;
+    @include mq(desktop) {
+      @include card-set-item(6);
     }
   }
   &__link {
@@ -32,7 +35,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100%;
+    height: 92px;
     border-radius: 4px;
     color: #afb1b8;
     border: 1px solid #afb1b8;

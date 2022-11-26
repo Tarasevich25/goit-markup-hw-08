@@ -2,12 +2,20 @@
   display: none;
   gap: 50px;
   margin-left: auto;
-  @media (min-width: $tablet) {
+  @include mq(tablet) {
+    display: block;
+  }
+  @include mq(desktop) {
     display: flex;
   }
   &--icon {
     fill: currentColor;
     margin-right: 10px;
+  }
+  &--link {
+    @include mq(tablet-only) {
+      margin-bottom: 10px;
+    }
   }
 }
 .header__nav--item {

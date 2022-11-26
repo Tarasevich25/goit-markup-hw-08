@@ -1,14 +1,23 @@
 .footer {
-  display: flex;
-  align-items: baseline;
   background-color: #2f303a;
   padding: 60px 0;
   &__basic {
-    display: flex;
-    align-items: baseline;
-    gap: 70px;
+    @include mq(not-desktop) {
+      text-align: center;
+    }
+    @include mq(tablet) {
+      display: flex;
+      align-items: baseline;
+      flex-wrap: wrap;
+    }
+    @include mq(tablet-only) {
+      justify-content: space-around;
+    }
   }
   &__info {
+    @include mq(not-desktop) {
+      margin-bottom: 60px;
+    }
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
     font-size: 14px;
@@ -49,6 +58,9 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 20px;
+    @include mq(desktop) {
+      margin-left: 70px;
+    }
   }
 }
 .address-link {

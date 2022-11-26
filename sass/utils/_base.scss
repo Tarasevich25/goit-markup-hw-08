@@ -30,17 +30,19 @@ a {
 }
 .container {
   padding: 0 15px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  @media (max-width: 479px) {
+    width: auto;
+  }
   @media (min-width: $mobile) {
-    width: $mobile;
-    margin: 0 auto;
+    width: 100%;
+    max-width: $mobile;
   }
   @media (min-width: $tablet) {
-    width: $tablet;
+    max-width: $tablet;
   }
   @media (min-width: $desktop) {
-    width: $desktop;
+    max-width: $desktop;
   }
 }
 img {
