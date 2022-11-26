@@ -8,6 +8,7 @@
   width: 100vw;
   height: 100vh;
   padding: 48px 40px;
+  z-index: 999;
   background-color: $third-color;
   overflow-y: scroll;
   transform: translateX(100%);
