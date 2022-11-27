@@ -29,14 +29,14 @@
         <nav class="header__nav">
           <ul class="header__nav--button list">
             <li>
-              <a class="header__nav--item" href="./index.html">Студія</a>
-            </li>
-            <li>
               <a
                 class="header__nav--item header__nav--current"
-                href="./portfolio.html"
-                >Портфоліо</a
+                href="./index.html"
+                >Студія</a
               >
+            </li>
+            <li>
+              <a class="header__nav--item" href="./portfolio.html">Портфоліо</a>
             </li>
             <li>
               <a class="header__nav--item" href="./index.html">Контакти</a>
@@ -91,35 +91,36 @@
                   <picture>
                     <source
                       srcset="
-                        ./images/technokryak-mobile    1x,
-                        ./images/technokryak-mobile@2x 2x
+                        ./images/technokryak-desktop.jpg    1x,
+                        ./images/technokryak-desktop@2x.jpg 2x
                       "
-                      media="max-width:767px"
+                      media="(min-width:1200px)"
                       type="image/jpeg"
                     />
                     <source
                       srcset="
-                        ./images/technokryak-tablet    1x,
-                        ./images/technokryak-tablet@2x 2x
+                        ./images/technokryak-tablet.jpg    1x,
+                        ./images/technokryak-tablet@2x.jpg 2x
                       "
-                      media="min-width:768px"
-                      type="image/jpg"
+                      media="(min-width:768px)"
+                      type="image/jpeg"
                     />
                     <source
                       srcset="
-                        ./images/technokryak-desktop    1x,
-                        ./images/technokryak-desktop@2x 2x
+                        ./images/technokryak-mobile.jpg    1x,
+                        ./images/technokryak-mobile@2x.jpg 2x
                       "
-                      media="min-width:1200px"
-                      type="image/jpg"
+                      media="(max-width:767px)"
+                      type="image/jpeg"
                     />
                     <img
                       srcset="
-                        ./images/technokryak-desktop    1x,
-                        ./images/technokryak-desktop@2x 2x
+                        ./images/technokryak-desktop.jpg    1x,
+                        ./images/technokryak-desktop@2x.jpg 2x
                       "
                       src="./images/technokryak-desktop.jpg"
                       alt="Technokryak"
+                      class="portfolio__icon"
                     />
                   </picture>
                   <div class="portfolio__thumb--overlay">
@@ -143,35 +144,36 @@
                   <picture>
                     <source
                       srcset="
-                        ./images/neworleanvsgoldenstar-mobile    1x,
-                        ./images/neworleanvsgoldenstar-mobile@2x 2x
+                        ./images/neworleanvsgoldenstar-desktop.jpg    1x,
+                        ./images/neworleanvsgoldenstar-desktop@2x.jpg 2x
                       "
-                      media="max-width:767px"
+                      media="(min-width:1200px)"
                       type="image/jpeg"
                     />
                     <source
                       srcset="
-                        ./images/neworleanvsgoldenstar-tablet    1x,
-                        ./images/neworleanvsgoldenstar-tablet@2x 2x
+                        ./images/neworleanvsgoldenstar-tablet.jpg    1x,
+                        ./images/neworleanvsgoldenstar-tablet@2x.jpg 2x
                       "
-                      media="min-width:768px"
+                      media="(min-width:768px)"
                       type="image/jpeg"
                     />
                     <source
                       srcset="
-                        ./images/neworleanvsgoldenstar-desktop    1x,
-                        ./images/neworleanvsgoldenstar-desktop@2x 2x
+                        ./images/neworleanvsgoldenstar-mobile.jpg    1x,
+                        ./images/neworleanvsgoldenstar-mobile@2x.jpg 2x
                       "
-                      media="min-width:1200px"
+                      media="(max-width:767px)"
                       type="image/jpeg"
                     />
                     <img
                       srcset="
-                        ./images/neworleanvsgoldenstar-desktop    1x,
-                        ./images/neworleanvsgoldenstar-desktop@2x 2x
+                        ./images/neworleanvsgoldenstar-desktop.jpg    1x,
+                        ./images/neworleanvsgoldenstar-desktop@2x.jpg 2x
                       "
                       src="./images/neworleanvsgoldenstar-desktop.jpg"
                       alt="Poster New Orlean vs Golden Star"
+                      class="portfolio__icon"
                     />
                   </picture>
                   <div class="portfolio__thumb--overlay">
@@ -197,35 +199,36 @@
                   <picture>
                     <source
                       srcset="
-                        ./images/seafood-mobile    1x,
-                        ./images/seafood-mobile@2x 2x
+                        ./images/seafood-desktop.jpg    1x,
+                        ./images/seafood-desktop@2x.jpg 2x
                       "
-                      media="max-width:767px"
+                      media="(min-width:1200px)"
                       type="image/jpeg"
                     />
                     <source
                       srcset="
-                        ./images/seafood-tablet    1x,
-                        ./images/seafood-tablet@2x 2x
+                        ./images/seafood-tablet.jpg    1x,
+                        ./images/seafood-tablet@2x.jpg 2x
                       "
-                      media="min-width:768px"
+                      media="(min-width:768px)"
                       type="image/jpeg"
                     />
                     <source
                       srcset="
-                        ./images/seafood-desktop    1x,
-                        ./images/seafood-desktop@2x 2x
+                        ./images/seafood-mobile.jpg    1x,
+                        ./images/seafood-mobile@2x.jpg 2x
                       "
-                      media="min-width:1200px"
+                      media="(max-width:767px)"
                       type="image/jpeg"
                     />
                     <img
                       srcset="
-                        ./images/seafood-desktop    1x,
-                        ./images/seafood-desktop@2x 2x
+                        ./images/seafood-desktop.jpg    1x,
+                        ./images/seafood-desktop@2x.jpg 2x
                       "
                       src="./images/seafood-desktop.jpg"
-                      alt="Seafood restaurant"
+                      alt="SeaFood Restaurant"
+                      class="portfolio__icon"
                     />
                   </picture>
                   <div class="portfolio__thumb--overlay">
@@ -246,11 +249,41 @@
             <li class="portfolio__item">
               <a href="" class="portfolio-link">
                 <div class="portfolio__thumb">
-                  <img
-                    width="370"
-                    src="./images/primeproject-desktop.jpg"
-                    alt="Project Prime"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/primeproject-desktop.jpg    1x,
+                        ./images/primeproject-desktop@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/primeproject-tablet.jpg    1x,
+                        ./images/primeproject-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/primeproject-mobile.jpg    1x,
+                        ./images/primeproject-mobile@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      srcset="
+                        ./images/primeproject-desktop.jpg    1x,
+                        ./images/primeproject-desktop@2x.jpg 2x
+                      "
+                      src="./images/primeproject-desktop.jpg"
+                      alt="Project Prime"
+                      class="portfolio__icon"
+                    />
+                  </picture>
                   <div class="portfolio__thumb--overlay">
                     <p class="portfolio__thumb--text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -269,11 +302,41 @@
             <li class="portfolio__item">
               <a href="" class="portfolio-link">
                 <div class="portfolio__thumb">
-                  <img
-                    width="370"
-                    src="./images/boxesproject-desktop.jpg"
-                    alt="Project Boxes"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/boxesproject-desktop.jpg    1x,
+                        ./images/boxesproject-desktop@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/boxesproject-tablet.jpg    1x,
+                        ./images/boxesproject-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/boxesproject-mobile.jpg    1x,
+                        ./images/boxesproject-mobile@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      srcset="
+                        ./images/boxesproject-desktop.jpg    1x,
+                        ./images/boxesproject-desktop@2x.jpg 2x
+                      "
+                      src="./images/boxesproject-desktop.jpg"
+                      alt="Project Boxes"
+                      class="portfolio__icon"
+                    />
+                  </picture>
                   <div class="portfolio__thumb--overlay">
                     <p class="portfolio__thumb--text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -292,11 +355,41 @@
             <li class="portfolio__item">
               <a href="" class="portfolio-link">
                 <div class="portfolio__thumb">
-                  <img
-                    width="370"
-                    src="./images/inspirationhasnoborders-desktop.jpg"
-                    alt="Inspiration has no borders"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/inspirationhasnoborders-desktop.jpg    1x,
+                        ./images/inspirationhasnoborders-desktop@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/inspirationhasnoborders-tablet.jpg    1x,
+                        ./images/inspirationhasnoborders-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/inspirationhasnoborders-mobile.jpg    1x,
+                        ./images/inspirationhasnoborders-mobile@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      srcset="
+                        ./images/inspirationhasnoborders-desktop.jpg    1x,
+                        ./images/inspirationhasnoborders-desktop@2x.jpg 2x
+                      "
+                      src="./images/inspirationhasnoborders-desktop.jpg"
+                      alt="Inspiration has no borders"
+                      class="portfolio__icon"
+                    />
+                  </picture>
                   <div class="portfolio__thumb--overlay">
                     <p class="portfolio__thumb--text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -317,11 +410,41 @@
             <li class="portfolio__item">
               <a href="" class="portfolio-link">
                 <div class="portfolio__thumb">
-                  <img
-                    width="370"
-                    src="./images/limitededition-desktop.jpg"
-                    alt="Limited Edition"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/limitededition-desktop.jpg    1x,
+                        ./images/limitededition-desktop@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/limitededition-tablet.jpg    1x,
+                        ./images/limitededition-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/limitededition-mobile.jpg    1x,
+                        ./images/limitededition-mobile@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      srcset="
+                        ./images/limitededition-desktop.jpg    1x,
+                        ./images/limitededition-desktop@2x.jpg 2x
+                      "
+                      src="./images/limitededition-desktop.jpg"
+                      alt="Limited edition"
+                      class="portfolio__icon"
+                    />
+                  </picture>
                   <div class="portfolio__thumb--overlay">
                     <p class="portfolio__thumb--text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -342,11 +465,41 @@
             <li class="portfolio__item">
               <a href="" class="portfolio-link">
                 <div class="portfolio__thumb">
-                  <img
-                    width="370"
-                    src="./images/labproject-desktop.jpg"
-                    alt="Project Lab"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/labproject-desktop.jpg    1x,
+                        ./images/labproject-desktop@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/labproject-tablet.jpg    1x,
+                        ./images/labproject-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/labproject-mobile.jpg    1x,
+                        ./images/labproject-mobile@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      srcset="
+                        ./images/labproject-desktop.jpg    1x,
+                        ./images/labproject-desktop@2x.jpg 2x
+                      "
+                      src="./images/labproject-desktop.jpg"
+                      alt="Project Lab"
+                      class="portfolio__icon"
+                    />
+                  </picture>
                   <div class="portfolio__thumb--overlay">
                     <p class="portfolio__thumb--text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -365,11 +518,41 @@
             <li class="portfolio__item">
               <a href="" class="portfolio-link">
                 <div class="portfolio__thumb">
-                  <img
-                    width="370"
-                    src="./images/growingbussiness-desktop.jpg"
-                    alt="Growing Bussiness"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/growingbussiness-desktop.jpg    1x,
+                        ./images/growingbussiness-desktop@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/growingbussiness-tablet.jpg    1x,
+                        ./images/growingbussiness-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/growingbussiness-mobile.jpg    1x,
+                        ./images/growingbussiness-mobile@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      srcset="
+                        ./images/growingbussiness-desktop.jpg    1x,
+                        ./images/growingbussiness-desktop@2x.jpg 2x
+                      "
+                      src="./images/labproject-desktop.jpg"
+                      alt="Growing Business"
+                      class="portfolio__icon"
+                    />
+                  </picture>
                   <div class="portfolio__thumb--overlay">
                     <p class="portfolio__thumb--text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
