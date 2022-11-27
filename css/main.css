@@ -1245,7 +1245,15 @@ img {
     gap: 30px;
   }
 }
-.portfolio__item {
+.portfolio-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1262,9 +1270,18 @@ img {
 
 .portfolio__thumb {
   position: relative;
-  width: 370px;
-  height: 294px;
   overflow: hidden;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .portfolio__thumb {
+    width: 354px;
+  }
+}
+@media (min-width: 1200px) {
+  .portfolio__thumb {
+    width: 370px;
+  }
 }
 .portfolio__thumb--overlay {
   position: absolute;
