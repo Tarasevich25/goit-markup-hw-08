@@ -26,13 +26,7 @@
     padding: 0;
     cursor: pointer;
   }
-  &__nav {
-    display: block;
-  }
-  &__nav--item:not(:last-child) {
-    margin-bottom: 32px;
-  }
-  &__nav--link {
+  &__nav-link {
     font-weight: 500;
     font-size: 40px;
     line-height: 1.18;
@@ -40,15 +34,23 @@
     letter-spacing: 0.02em;
     color: $main-color;
   }
+  &__nav {
+    display: block;
+    &--current {
+      color: $hover-color;
+    }
+  }
+  &__nav-item:not(:last-child) {
+    margin-bottom: 32px;
+  }
   &__contacts {
-    width: 480px;
-    &--list {
+    &-list {
       margin-bottom: 64px;
     }
-    &--item:not(:last-child) {
+    &-item:not(:last-child) {
       margin-bottom: 32px;
     }
-    &--link {
+    &-link {
       display: block;
       font-weight: 500;
       font-size: 34px;
@@ -56,7 +58,10 @@
       letter-spacing: 0.02em;
       color: $second-color;
     }
-    &--link-mail {
+    &-link-number {
+      color: $hover-color;
+    }
+    &-link-mail {
       font-size: 24px;
     }
   }
@@ -64,7 +69,7 @@
     display: flex;
     align-items: center;
     gap: 20px;
-    &--link {
+    &-link {
       position: relative;
       display: block;
       font-family: inherit;

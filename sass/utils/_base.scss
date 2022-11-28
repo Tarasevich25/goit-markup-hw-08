@@ -22,7 +22,6 @@ a {
 }
 /* base styles */
 .sections {
-  margin: 0 auto;
   padding: 60px 0;
   @media (min-width: $desktop) {
     padding: 94px 0;
@@ -35,7 +34,6 @@ a {
     width: auto;
   }
   @media (min-width: $mobile) {
-    width: 100%;
     max-width: $mobile;
   }
   @media (min-width: $tablet) {

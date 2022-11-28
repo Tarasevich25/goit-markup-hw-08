@@ -1,5 +1,7 @@
 .working {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
   @media (min-width: $tablet) {
     @include card-set;
   }
@@ -41,6 +43,5 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     margin: 0;
-    margin-bottom: 30px;
   }
 }

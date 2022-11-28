@@ -26,6 +26,10 @@
     transition-duration: 250ms;
     transition-property: color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include mq(desktop) {
+      margin-right: 70px;
+    }
+
     &:hover,
     &:focus {
       color: $hover-color;
@@ -58,9 +62,6 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 20px;
-    @include mq(desktop) {
-      margin-left: 70px;
-    }
   }
 }
 .address-link {

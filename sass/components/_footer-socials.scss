@@ -5,9 +5,6 @@
   @include mq(mobile-only) {
     margin-bottom: 60px;
   }
-  @include mq(desktop) {
-    margin-left: 70px;
-  }
 }
 .footer__socials--link {
   display: flex;

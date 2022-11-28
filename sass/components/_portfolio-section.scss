@@ -42,7 +42,6 @@
 
     @include mq(tablet) {
       display: flex;
-      margin-top: 50px;
       flex-wrap: wrap;
       gap: 30px;
     }
@@ -57,6 +56,10 @@
     @include mq(tablet) {
       width: calc((100% - 30px) / 2);
     }
+    @include mq(desktop) {
+      width: calc((100% - 60px) / 3);
+    }
+
     &:not(:last-child) {
       @media screen and (max-width: 767px) {
         margin-bottom: 30px;

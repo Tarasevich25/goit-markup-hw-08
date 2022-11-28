@@ -46,7 +46,7 @@
         <ul class="header__contacts list">
           <li class="header__contacts--link">
             <a class="header__nav--item" href="mailto:info@devstudio.com">
-              <svg class="header__contacts--icon" width="16" height="12">
+              <svg class="header__contacts__icon-mail">
                 <use href="./images/icons.svg#email"></use>
               </svg>
               info@devstudio.com</a
@@ -54,7 +54,7 @@
           </li>
           <li>
             <a class="header__nav--item" href="tel:+380961111111">
-              <svg class="header__contacts--icon" width="10" height="16">
+              <svg class="header__contacts__icon-number">
                 <use href="./images/icons.svg#smartphone"></use>
               </svg>
               +380961111111</a
@@ -141,7 +141,7 @@
           </div>
         </div>
       </section>
-      <section class="working sections">
+      <section class="sections">
         <div class="working__container container">
           <ul class="working list">
             <li class="working__thumb">
@@ -236,26 +236,26 @@
               <picture>
                 <source
                   srcset="
-                    ./images/productdesigner-mobile    1x,
-                    ./images/prodectdesigner-mobile@2x 2x
+                    ./images/productdesigner-mobile.jpg    1x,
+                    ./images/prodectdesigner-mobile@2x.jpg 2x
                   "
-                  media="max-width:767px"
+                  media="(max-width:767px)"
                   type="image/jpeg"
                 />
                 <source
                   srcset="
-                    ./images/productdesigner-tablet    1x,
-                    ./images/prodectdesigner-tablet@2x 2x
+                    ./images/productdesigner-tablet.jpg    1x,
+                    ./images/prodectdesigner-tablet@2x.jpg 2x
                   "
-                  media="min-width:768px"
+                  media="(min-width:768px)"
                   type="image/jpeg"
                 />
                 <source
                   srcset="
-                    ./images/productdesigner-desktop    1x,
-                    ./images/prodectdesigner-desktop@2x 2x
+                    ./images/productdesigner-desktop.jpg    1x,
+                    ./images/prodectdesigner-desktop@2x.jpg 2x
                   "
-                  media="min-width:1200px"
+                  media="(min-width:1200px)"
                   type="image/jpeg"
                 />
                 <img
@@ -264,8 +264,8 @@
                 />
               </picture>
               <div class="team-member">
-                <p class="team-member__name">Ігор Дем'яненко</p>
-                <h3 class="team-member__position">Product Designer</h3>
+                <h3 class="team-member__name">Ігор Дем'яненко</h3>
+                <p class="team-member__position">Product Designer</p>
                 <ul class="socials">
                   <li class="socials__item">
                     <a
@@ -306,26 +306,26 @@
               <picture>
                 <source
                   srcset="
-                    ./images/fedeveloper-mobile    1x,
-                    ./images/fedeveloper-mobile@2x 2x
+                    ./images/fedeveloper-mobile.jpg    1x,
+                    ./images/fedeveloper-mobile@2x.jpg 2x
                   "
-                  media="max-width:767px"
+                  media="(max-width:767px)"
                   type="image/jpeg"
                 />
                 <source
                   srcset="
-                    ./images/fedeveloper-tablet    1x,
-                    ./images/fedeveloper-tablet@2x 2x
+                    ./images/fedeveloper-tablet.jpg    1x,
+                    ./images/fedeveloper-tablet@2x.jpg 2x
                   "
-                  media="min-width:768px"
+                  media="(min-width:768px)"
                   type="image/jpeg"
                 />
                 <source
                   srcset="
-                    ./images/fedeveloper-desktop    1x,
-                    ./images/fedeveloper-desktop@2x 2x
+                    ./images/fedeveloper-desktop.jpg    1x,
+                    ./images/fedeveloper-desktop@2x.jpg 2x
                   "
-                  media="min-width:1200px"
+                  media="(min-width:1200px)"
                   type="image/jpeg"
                 />
                 <img
@@ -334,8 +334,8 @@
                 />
               </picture>
               <div class="team-member">
-                <p class="team-member__name">Ольга Рєпіна</p>
-                <h3 class="team-member__position">Frontend Developer</h3>
+                <h3 class="team-member__name">Ольга Рєпіна</h3>
+                <p class="team-member__position">Frontend Developer</p>
                 <ul class="socials">
                   <li class="socials__item">
                     <a
@@ -376,26 +376,26 @@
               <picture>
                 <source
                   srcset="
-                    ./images/marketing-mobile    1x,
-                    ./images/marketing-mobile@2x 2x
+                    ./images/marketing-mobile.jpg    1x,
+                    ./images/marketing-mobile@2x.jpg 2x
                   "
-                  media="max-width:767px"
+                  media="(max-width:767px)"
                   type="image/jpeg"
                 />
                 <source
                   srcset="
-                    ./images/marketing-tablet    1x,
-                    ./images/marketing-tablet@2x 2x
+                    ./images/marketing-tablet.jpg    1x,
+                    ./images/marketing-tablet@2x.jpg 2x
                   "
-                  media="min-width:768px"
+                  media="(min-width:768px)"
                   type="image/jpeg"
                 />
                 <source
                   srcset="
-                    ./images/marketing-desktop    1x,
-                    ./images/marketing-desktop@2x 2x
+                    ./images/marketing-desktop.jpg    1x,
+                    ./images/marketing-desktop@2x.jpg 2x
                   "
-                  media="min-width:1200px"
+                  media="(min-width:1200px)"
                   type="image/jpeg"
                 />
                 <img
@@ -404,8 +404,8 @@
                 />
               </picture>
               <div class="team-member">
-                <p class="team-member__name">Микола Тарасов</p>
-                <h3 class="team-member__position">Marketing</h3>
+                <h3 class="team-member__name">Микола Тарасов</h3>
+                <p class="team-member__position">Marketing</p>
                 <ul class="socials">
                   <li class="socials__item">
                     <a
@@ -446,26 +446,26 @@
               <picture>
                 <source
                   srcset="
-                    ./images/uidesigner-mobile    1x,
-                    ./images/uidesigner-mobile@2x 2x
+                    ./images/uidesigner-mobile.jpg    1x,
+                    ./images/uidesigner-mobile@2x.jpg 2x
                   "
-                  media="max-width:767px"
+                  media="(max-width:767px)"
                   type="image/jpeg"
                 />
                 <source
                   srcset="
-                    ./images/uidesigner-tablet    1x,
-                    ./images/uidesigner-tablet@2x 2x
+                    ./images/uidesigner-tablet.jpg    1x,
+                    ./images/uidesigner-tablet@2x.jpg 2x
                   "
-                  media="min-width:768px"
+                  media="(min-width:768px)"
                   type="image/jpeg"
                 />
                 <source
                   srcset="
-                    ./images/uidesigner-desktop    1x,
-                    ./images/uidesigner-desktop@2x 2x
+                    ./images/uidesigner-desktop.jpg    1x,
+                    ./images/uidesigner-desktop@2x.jpg 2x
                   "
-                  media="min-width:1200px"
+                  media="(min-width:1200px)"
                   type="image/jpeg"
                 />
                 <img
@@ -474,8 +474,8 @@
                 />
               </picture>
               <div class="team-member">
-                <p class="team-member__name">Михайло Єрмаков</p>
-                <h3 class="team-member__position">UI Designer</h3>
+                <h3 class="team-member__name">Михайло Єрмаков</h3>
+                <p class="team-member__position">UI Designer</p>
                 <ul class="socials">
                   <li class="socials__item">
                     <a
@@ -515,7 +515,7 @@
           </ul>
         </div>
       </section>
-      <section class="clients section">
+      <section class="clients sections">
         <div class="container">
           <h2 class="clients__head">Постійні клієнти</h2>
           <ul class="clients__logo list">
@@ -644,17 +644,14 @@
             </li>
           </ul>
         </div>
-        <div class="footer-feedback">
+        <div class="footer__feedback">
           <form name="contact-form">
-            <p class="footer__feedback--label" for="person-email">
-              Підпишіться на розсилку
-            </p>
+            <p class="footer__feedback--label">Підпишіться на розсилку</p>
             <div class="footer__feedback--field">
               <input
                 class="footer__feedback--input"
                 type="email"
                 name="person-email"
-                id="person-email"
                 placeholder="Email"
               />
               <button type="submit" class="footer__feedback--btn">
@@ -668,80 +665,78 @@
         </div>
       </div>
     </footer>
-    <div class="container">
-      <div class="mobile-menu js-menu-container is-open">
-        <button
-          data-modal-close
-          class="mobile-menu__close-button js-close-menu"
-          type="submit"
+    <div class="mobile-menu js-menu-container">
+      <button
+        data-modal-close
+        class="mobile-menu__close-button js-close-menu"
+        type="submit"
+      >
+        <svg
+          width="40"
+          height="40"
+          aria-label="Кнопка закриття мобільного меню"
         >
-          <svg
-            width="40"
-            height="40"
-            aria-label="Кнопка закриття мобільного меню"
+          <use href="./images/icons.svg#close-mobile"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu__nav list">
+        <li class="mobile-menu__nav-item">
+          <a
+            href="./index.html"
+            class="mobile-menu__nav-link mobile-menu__nav--current"
+            >Студія</a
           >
-            <use href="./images/icons.svg#close-mobile"></use>
-          </svg>
-        </button>
-        <ul class="mobile-menu__nav list">
-          <li class="mobile-menu__nav--item">
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a href="./portfolio.html" class="mobile-menu__nav-link">Портфоліо</a>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a href="" class="mobile-menu__nav-link">Контакти</a>
+        </li>
+      </ul>
+      <div class="mobile-menu__contacts">
+        <ul class="list mobile-menu__contacts-list">
+          <li class="mobile-menu__contacts-item">
             <a
-              href="./index.html"
-              class="mobile-menu__nav--link header__nav--current"
-              >Студія</a
+              class="mobile-menu__contacts-link mobile-menu__contacts-link-number"
+              href="tel:+380961111111"
+              >+38 096 111 11 11</a
             >
           </li>
-          <li class="mobile-menu__nav--item">
-            <a href="./portfolio.html" class="mobile-menu__nav--link"
-              >Портфоліо</a
+          <li class="mobile-menu__contacts-item">
+            <a
+              class="mobile-menu__contacts-link mobile-menu__contacts-link-mail"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
             >
-          </li>
-          <li class="mobile-menu__nav--item">
-            <a href="" class="mobile-menu__nav--link">Контакти</a>
           </li>
         </ul>
-        <div class="mobile-menu__contacts">
-          <ul class="list mobile-menu__contacts--list">
-            <li class="mobile-menu__contacts--item">
-              <a class="mobile-menu__contacts--link" href="tel:+380961111111"
-                >+38 096 111 11 11</a
-              >
-            </li>
-            <li class="mobile-menu__contacts--item">
-              <a
-                class="mobile-menu__contacts--link mobile-menu__contacts--link-mail"
-                href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-          </ul>
-          <ul class="list mobile-menu__socials">
-            <li>
-              <a
-                href=""
-                class="mobile-menu__socials--link mobile-menu__socials--line"
-                >Instagram</a
-              >
-            </li>
-            <li>
-              <a
-                href=""
-                class="mobile-menu__socials--link mobile-menu__socials--line"
-                >Twitter</a
-              >
-            </li>
-            <li>
-              <a
-                href=""
-                class="mobile-menu__socials--link mobile-menu__socials--line"
-                >Facebook</a
-              >
-            </li>
-            <li>
-              <a href="" class="mobile-menu__socials--link">LinkedIn</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="list mobile-menu__socials">
+          <li>
+            <a
+              href=""
+              class="mobile-menu__socials-link mobile-menu__socials--line"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="mobile-menu__socials-link mobile-menu__socials--line"
+              >Twitter</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="mobile-menu__socials-link mobile-menu__socials--line"
+              >Facebook</a
+            >
+          </li>
+          <li>
+            <a href="" class="mobile-menu__socials-link">LinkedIn</a>
+          </li>
+        </ul>
       </div>
     </div>
     <script src="./js/mobile-menu.js"></script>

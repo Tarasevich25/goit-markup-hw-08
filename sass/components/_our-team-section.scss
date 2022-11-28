@@ -37,5 +37,8 @@
     @include mq(tablet) {
       width: calc((100% - 30px) / 2);
     }
+    @include mq(desktop) {
+      width: calc((100% - 90px) / 4);
+    }
   }
 }

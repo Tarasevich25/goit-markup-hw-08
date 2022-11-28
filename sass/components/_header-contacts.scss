@@ -8,9 +8,25 @@
   @include mq(desktop) {
     display: flex;
   }
-  &--icon {
+  &__icon-mail {
     fill: currentColor;
     margin-right: 10px;
+    width: 14px;
+    height: 10px;
+    @include mq(desktop) {
+      width: 16px;
+      height: 12px;
+    }
+  }
+  &__icon-number {
+    fill: currentColor;
+    margin-right: 10px;
+    width: 10px;
+    height: 14px;
+    @include mq(desktop) {
+      width: 10px;
+      height: 16px;
+    }
   }
   &--link {
     @include mq(tablet-only) {
@@ -24,12 +40,15 @@
     align-items: center;
     color: $second-color;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     text-decoration: none;
     letter-spacing: 0.02em;
     transition-duration: 250ms;
     transition-property: color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include mq(desktop) {
+      font-size: 14px;
+    }
   }
   .header__contacts &:hover,
   .header__contacts &:focus {
