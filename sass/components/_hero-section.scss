@@ -1,10 +1,10 @@
 .hero {
-  background-image: $gradient, url("./images/bgimage-mobile.jpg");
+  background-image: $gradient, url("../images/bgimage-mobile.jpg");
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: $gradient, url("./images/bgimage-mobile@2x.jpg");
+    background-image: $gradient, url("../images/bgimage-mobile@2x.jpg");
   }
   background-color: #2f303a;
   margin: 0 auto;
@@ -15,22 +15,22 @@
   background-position: center;
   background-repeat: no-repeat;
   @include mq(tablet) {
-    background-image: $gradient, url("./images/bgimage-tablet.jpg");
+    background-image: $gradient, url("../images/bgimage-tablet.jpg");
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: $gradient, url("./images/bgimage-tablet@2x.jpg");
+      background-image: $gradient, url("../images/bgimage-tablet@2x.jpg");
     }
   }
   @include mq(desktop) {
-    background-image: $gradient, url("./images/bgimage-desktop.jpg");
+    background-image: $gradient, url("../images/bgimage-desktop.jpg");
     padding: 200px 0;
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: $gradient, url("./images/bgimage-desktop@2x.jpg");
+      background-image: $gradient, url("../images/bgimage-desktop@2x.jpg");
     }
   }
   &__head {
